@@ -1,0 +1,118 @@
+.admin-orders-container {
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.admin-orders-container h2 {
+  color: #b30000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.order-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px; /* Fixed height for equal cards */
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.9em;
+}
+
+.status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.processing {
+  background: #cce5ff;
+  color: #004085;
+}
+
+.status.completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.cancelled {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.order-details {
+  margin-bottom: 15px;
+  flex-grow: 1; /* Allows details to grow */
+}
+
+.order-details p {
+  margin: 5px 0;
+}
+
+.order-items {
+  margin: 15px 0;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 5px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.total-amount {
+  font-size: 1.1em;
+  color: #b30000;
+  margin-top: 10px;
+}
+
+.order-actions {
+  margin-top: auto; /* Push actions to bottom */
+  display: flex;
+  flex-direction: column;
+}
+
+.order-actions select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.order-actions button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #b30000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-actions button:hover {
+  background-color: #800000;
+}

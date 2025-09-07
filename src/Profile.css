@@ -1,0 +1,148 @@
+/* 🌟 Profile Page Scoped Styles (Laptop & PC Only) */
+
+@media (min-width: 1200px) {
+  .profile-page {
+    font-family: 'Poppins', sans-serif;
+    background: #fff5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+  }
+
+  /* 🚀 Profile Container - Increased Width */
+  .profile-page .profile-container {
+    max-width: 1800px;
+    background: #ffffff;
+    width: 1000px;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0px 6px 15px rgba(255, 0, 0, 0.2);
+    text-align: center;
+    border: 1px solid #ff4d4d;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* 🖼️ Profile Picture */
+  .profile-page .profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff0000;
+    transition: transform 0.3s ease-in-out, border-color 0.3s;
+    margin-bottom: 20px;
+  }
+
+  .profile-page .profile-pic:hover {
+    transform: scale(1.08);
+    border-color: #cc0000;
+  }
+
+  /* 🔥 Sections Styling - Better Spacing */
+  .profile-page .profile-section,
+  .profile-page .details-section,
+  .profile-page .order-history {
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    background: #ffe6e6;
+    border: 1px solid #ff4d4d;
+    box-shadow: 0px 3px 8px rgba(255, 0, 0, 0.1);
+  }
+
+  .profile-page .details-section h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #cc0000;
+  }
+
+  .profile-page .details-section p {
+    font-size: 16px;
+    color: #990000;
+  }
+
+  /* 📜 Order History */
+  .profile-page .order-history button {
+    width: 100%;
+  }
+
+  /* 🎨 Buttons - Larger and More Responsive */
+  .profile-page .btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 10px;
+    background: #ff0000;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 12px rgba(255, 0, 0, 0.2);
+  }
+
+  .profile-page .btn:hover {
+    background: #cc0000;
+    transform: scale(1.07);
+    box-shadow: 0px 6px 15px rgba(255, 0, 0, 0.3);
+  }
+
+  .profile-page .btn:active {
+    transform: scale(0.96);
+  }
+
+  /* 🖥️ Modal Styling */
+  .profile-page .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid #ff4d4d;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .profile-page .modal input {
+    width: 91.5%;
+    padding: 14px;
+    margin-bottom: 12px;
+    border: 1px solid #ff4d4d;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+    margin-right: 40px;
+  }
+
+  .profile-page .modal input::placeholder {
+    color: #cc0000;
+  }
+  .profile-page .modal button{
+    margin-bottom: 5px;
+  }
+}
+
+/* Hide content for screens smaller than 1200px */
+@media (max-width: 1199px) {
+  .profile-page {
+    display: none;
+  }
+}
+
+.profile-page button{
+  background: linear-gradient(135deg, #ff5f6d, #ff9966);
+}
+
+.profile-page button:hover{
+  background: linear-gradient(135deg, #ff9966, #ff5f6d);
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;  
+
+}

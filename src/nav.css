@@ -1,0 +1,137 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-top: 25px;
+  width: 1400px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.dot {
+  color: rgb(255, 0, 0);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.3s;
+  text-align: center;
+}
+
+.nav-links li:hover,
+.active {
+  color: black;
+  border-bottom: 2px solid red;
+}
+
+/* Right section with buttons */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Login Icon */
+.login-icon {
+  color: red;
+  background-color: aliceblue;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 0; /* Remove left margin */
+}
+
+.login-icon:hover {
+  background-color: aqua;
+}
+
+.book-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+/* Remove underline from all navbar links */
+.nav-links a, .navbar-link, .navbar-link:visited, .navbar-link:active {
+  text-decoration: none !important;
+  color: black;
+}
+
+/* Remove default anchor styles */
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.navbar-link:hover {
+  color: #ff4500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .book-btn, .login-icon {
+    margin: 5px 0;
+  }
+}
+
+
+/* Profile Picture in Navbar */
+.profilepic {  
+  width: 50px;  /* Very small size */
+  height: 50px;
+  border-radius: 50%;  
+  object-fit: cover;  
+  border: 1px solid white;  
+  cursor: pointer;  
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;  
+}
+
+.profilepic:hover {  
+  transform: scale(1.1);  
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);  
+}

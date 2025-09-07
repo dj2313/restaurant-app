@@ -1,0 +1,199 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fix for navbar overlap */
+.home-container {
+  padding-top: 80px; /* Adjust based on navbar height */
+}
+
+/* Slider container */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    height: auto;
+  }
+}
+
+/* Slider */
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+/* Individual slide */
+.slide {
+  min-width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slide content */
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.slide-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #f9f9f9;
+}
+
+.slide-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  width: fit-content;
+}
+
+.cta-button:hover {
+  background-color: #e68900;
+}
+
+/* Slider navigation buttons */
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  padding: 5px;
+  
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.slider-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-button.prev {
+  left: 10px;
+}
+
+.slider-button.next {
+  right: 10px;
+}
+
+/* Chef Profile Section */
+.chef-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.chef-section h2 {
+  font-size: 32px;
+  color: #b71c1c;
+  margin-bottom: 20px;
+}
+
+.chef-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.chef-card {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.chef-card:hover {
+  transform: scale(1.05);
+}
+
+.chef-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.chef-card h3 {
+  font-size: 22px;
+  color: #333;
+}
+
+.chef-card p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slider-container {
+    height: auto;
+  }
+
+  .slide-content {
+    width: 90%;
+  }
+
+  .slide-content h1 {
+    font-size: 2rem;
+  }
+
+  .slide-content p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+  }
+
+  .chef-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

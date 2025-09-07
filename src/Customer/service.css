@@ -1,0 +1,121 @@
+.services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("./../Images/starter/butternaan.jpg") no-repeat center center/cover;
+    padding: 50px;
+    color: white;
+  }
+  
+  .reservation-section {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .info {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .info h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .info h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: aliceblue;
+  }
+  
+  .contact-details {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .contact-card {
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .icon {
+    font-size: 24px;
+    display: block;
+  }
+  
+  .reservation-form {
+    flex: 1;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .reservation-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+   
+    
+  }
+  
+  .reservation-form input,
+  .reservation-form textarea {
+    width: 98%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .reservation-form button {
+    width: 100%;
+    padding: 10px;
+    background: #ff4a4a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .availability-section {
+    margin-top: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+  }
+
+  .availability-section h3{
+    font-size: 28px;
+  }
+  
+  .availability-section input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .availability-section button {
+    width: 98%;
+    margin-top: 5px;
+    padding: 10px;
+    background: #ff4a4a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  

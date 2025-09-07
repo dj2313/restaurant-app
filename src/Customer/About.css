@@ -1,0 +1,180 @@
+/* About.css */
+
+.about-us {
+  margin-top: 20px;
+  font-family: sans-serif; /* Choose a suitable font */
+  color: #333; /* Dark gray text color for better contrast */
+  padding: 20px;
+  background-color: #fff; /* White background */
+}
+
+.about-us-container {
+  max-width: 960px; /* Set a maximum width for the content */
+  margin: 0 auto; /* Center the content */
+  padding: 20px;
+}
+
+.about-us h1, .about-us h2 {
+  color: #c00; /* Red headings */
+  text-align: center; /* Center the headings */
+  margin-bottom: 10px;
+}
+.about-us h2{
+  font-size: 27px;
+}
+
+.about-us p {
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 15px; /* Add spacing between paragraphs */
+}
+
+.about-us strong {
+  color: #c00; /* Red for emphasized text */
+}
+
+
+/* Testimonials Section */
+.testimonials {
+  background-image: url('./../Images/fruittart.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  color: white; /* White text on the dark background */
+  padding: 40px 0; /* Add more padding */
+  text-align: center; /* Center the testimonial content */
+}
+
+.testimonials h2 {
+  color: white; /* White heading */
+  margin-bottom: 20px;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+  gap: 20px; /* Space between testimonial cards */
+}
+
+.testimonial-card {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for cards */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 300px; /* Adjust width as needed */
+  color: #333; /* Darker text for card content */
+}
+
+.testimonial-card h3 {
+  color: #c00; /* Red name */
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: gold; /* Gold stars */
+  margin-bottom: 10px;
+}
+
+
+
+/* FAQ Section */
+.faq {
+  padding: 40px 0;
+  background-color: #f8f8f8; /* Very light gray background */
+}
+
+.faq h2 {
+  color: #c00;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd; /* Separator lines between FAQ items */
+  padding: 15px 0;
+  cursor: pointer; /* Make the question clickable */
+}
+
+.faq-question {
+  font-weight: bold;
+  color: #333;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  color: #666; /* Slightly lighter text for answers */
+}
+
+.faq-item.active .faq-question {
+  color: #c00; /* Red question when active */
+}
+
+
+/* Feedback Form */
+.feedback-form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+}
+
+.feedback-form-container h2 {
+  text-align: center;
+  color: #c00;
+  margin-bottom: 20px;
+}
+
+.feedback-form label {
+  display: block; /* Make labels stack on top of inputs */
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.feedback-form button {
+  background-color: #c00;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background-color: #a00; /* Slightly darker red on hover */
+}
+
+/* Responsive Design (Example - Adjust breakpoints as needed) */
+@media (max-width: 768px) {
+  .testimonials-container {
+      flex-direction: column; /* Stack testimonial cards vertically */
+  }
+
+  .testimonial-card {
+      width: 90%; /* Make cards take up most of the screen width */
+      margin: 10px auto;
+  }
+
+  .feedback-form-container {
+      max-width: 90%;
+  }
+}

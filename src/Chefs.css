@@ -1,0 +1,81 @@
+.chefs-container {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.chefs-container h2 {
+  text-align: center;
+  color: #b30000;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.chefs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.chef-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.chef-card:hover {
+  transform: translateY(-5px);
+}
+
+.chef-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.chef-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.chef-card:hover .chef-image img {
+  transform: scale(1.1);
+}
+
+.chef-info {
+  padding: 20px;
+}
+
+.chef-info h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.chef-info .speciality {
+  color: #b30000;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.chef-info .experience {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.chef-info .description {
+  color: #444;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .chefs-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,135 @@
+/* Payment.css */
+
+.payment-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.left-section, .right-section {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.bottom-section {
+    grid-column: span 2;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.summary-section {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.delivery-form, .payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 2px;
+}
+.payment-form h4{
+    margin-top: 1px;
+}
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 12px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.make-payment-btn {
+    background: #ff9800;
+}
+
+.make-payment-btn:hover {
+    background: #fb8c00;
+}
+
+#paymentModal {
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#paymentModal h2 {
+    margin-bottom: 20px;
+}
+
+/* New Modal Styles */
+.payment-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.payment-options button {
+    padding: 10px 20px;
+    background: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.payment-options button.active {
+    background: #1976d2;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.payment-options button:hover {
+    background: #1e88e5;
+}
+
+.pay-now-btn {
+    margin-top: 20px;
+    background: #e91e63;
+    margin-bottom: 5px;
+}
+
+.pay-now-btn:hover {
+    background: #d81b60;
+}
+
+@media (max-width: 768px) {
+    .payment-container {
+      grid-template-columns: 1fr;
+    }
+
+    .payment-options {
+      flex-direction: column;
+    }
+}

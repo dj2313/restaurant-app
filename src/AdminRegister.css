@@ -1,0 +1,82 @@
+/* Admin Register Form Styling */
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: rgb(14, 13, 13);
+  }
+  
+  /* Heading */
+  .auth-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  /* Input Fields */
+  .auth-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(19, 19, 19);
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  /* Input Focus Effect */
+  .auth-container input:focus {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Button Styling */
+  .auth-container button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .auth-container button:hover {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    box-shadow: 0 5px 15px rgba(255, 117, 140, 0.5);
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #ff4d4d;
+    background: rgba(255, 77, 77, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .auth-container {
+      padding: 20px;
+      max-width: 90%;
+    }
+    .auth-container h2 {
+      font-size: 20px;
+    }
+  }
+  

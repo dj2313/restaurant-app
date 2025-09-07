@@ -1,0 +1,190 @@
+.cart-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 80px;
+  gap: 20px;
+  padding: 20px;
+  height: 100vh;
+}
+
+/* Left Side: Cart Items */
+.cart-left {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center; /* Align image and text in one row */
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  gap: 15px; /* Adds spacing between image and text */
+}
+
+.cart-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align text to the left */
+  gap: 3px; /* Adjust spacing between lines */
+  margin-left: 90px;
+  margin-top: -70px;
+  margin-bottom: 10px;
+}
+
+.cart-item h3 {
+  margin: 0;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.cart-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Delete Button Alignment */
+.delete-icon {
+  cursor: pointer;
+  color: red;
+  font-size: 20px;
+  transition: 0.3s;
+  padding: 5px;
+  margin-left: auto; /* Pushes delete icon to the right */
+}
+
+.delete-icon:hover {
+  color: darkred;
+  transform: scale(1.1);
+}
+
+/* Right Side: Item Details */
+.cart-right {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-right img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Buttons for Update and Delete */
+.cart-action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* .update-btn, .delete-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.update-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.update-btn:hover {
+  background-color: #0056b3;
+} */
+.update-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #4facfe, #00f2fe); /* Gradient */
+  color: white;
+  backdrop-filter: blur(10px); /* Glassmorphism */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease-in-out;
+}
+
+.update-btn:hover {
+  background: linear-gradient(135deg, #00f2fe, #4facfe); /* Invert Gradient */
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* .delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+} */
+
+/* Bottom Section: Payment Button */
+.cart-bottom {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.payment-btn {
+  padding: 15px 30px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.payment-btn:hover {
+  background-color: #218838;
+}
+
+/* Scrollable Left Section */
+.cart-left::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cart-left::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 80px;
+  }
+
+  .cart-bottom {
+    grid-column: span 1;
+  }
+}
